@@ -5,7 +5,7 @@ We will install HIVE and PIG and start practicing with their basic functions sep
 Both of these applications can either run on top of a working HDFS / Mapreduce cluster, or they can run in local mode (useful for debugging).
 
 ## Download and Install Hive
-1. Get and install hive from one of the mirror sites, copying it into the same directory where you have your hadoop root
+1. Get and install hive from one of the [mirror sites](http://www.apache.org/dyn/closer.cgi/hive/), copying it into the same directory where you have your hadoop root
 
    - `$ wget https://ftp.heanet.ie/mirrors/www.apache.org/dist/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz `
    - `$ tar -xvzf apache-hive-3.1.2-bin.tar.gz `
