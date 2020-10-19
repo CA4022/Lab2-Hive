@@ -12,17 +12,30 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
    - `$ cp -avi apache-hive-3.1.2-bin /usr/local/Cellar/hive-3.1.2`
 
    Some key steps:
-   1. Note you will need Java >6 and Hadoop 0.20.x or greater
-   1. Make sure your $HADOOP_HOME environment variable is correctly set
-   1. Set $HIVE_HOME and add hive to PATH
+   
+   * Note you will need Java >6 and Hadoop 0.20.x or greater
+   
+   * Make sure your $HADOOP_HOME environment variable is correctly set
+   
+   * Set $HIVE_HOME and add hive to PATH
    
    - `$ export HIVE_HOME=/usr/local/Cellar/hive-3.1.2`
    - `$ export PATH=/usr/local/Cellar/hive-3.1.2/bin:$PATH`
    
-   1. Bootstrap locations used to store files on HDFS
+   * Bootstrap locations used to store files on HDFS
       - `$ bin/hdfs dfs -mkdir /tmp` should already exist from hadoop installation
       - `$ bin/hdfs dfs -mkdir /user/hive/warehouse`
       - `$ bin/hdfs dfs -chmod g+w /tmp`should already have the right access rights from hadoop installation
       - `$ bin/hdfs dfs -chmod g+w /user/hive/warehouse`
-   1. Run the shell (of the three modes to run HIVE, we will use command line)
+   
+   * Run the shell (of the three modes to run HIVE, we will use command line)
       - `$ hive`
+
+2. Check examples to Create, Load, Query data with Hive (slide 17 onwards)
+   * <http://courses.coreservlets.com/Course-Materials/pdf/hadoop/07-Hive-01.pdf>
+   
+3. Create your own tables and load data from a .txt file you have created or downloaded, then practice some queries.
+   You can find more query examples and SQL cheat-sheet at the links below
+   
+   * https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/
+   * https://support.treasuredata.com/hc/en-us/articles/360001457347-Hive-Query-Language#hive-example-query-catalog
