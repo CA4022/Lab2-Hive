@@ -48,7 +48,7 @@ You can find an overall guide [here](https://cwiki.apache.org/confluence/display
 * Create your own tables and load data from a .txt file you have created or downloaded, then practice some queries.
    You can find more query examples and SQL cheat-sheet [here](https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/)
    
-## Hive errors
+## Hive errors and fixes
 Below is a list of possible errors you might encounter when installing and running Hive, and how to fix them.
 
 *  [Guava incompatibility error](https://phoenixnap.com/kb/install-hive-on-ubuntu)
