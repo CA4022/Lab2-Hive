@@ -80,8 +80,29 @@ The official apache manual is availalbe [here](http://pig.apache.org/docs/r0.17.
 ## PIG Examples
 1. Let's start from Wordcount
 
-2. More examples:
-   -... 
-   -...
+
+2. A Toy Example:
+      - Create two CSV file as follows:
+            * A.txt containing two lines: (0,1,2) and (1,3,4)
+            * B.txt containing two lines: (0,5,2) and (1,7,8)
+      - Run the PIG Latin commands below, one by one from shell, and observe what is contained in d, e, f and g after each dump (note the content of g and reflect upon the way pig handles schema on the fly
+```
+a = LOAD ‘A.txt’ using PigStorage(‘,’); 
+b = LOAD ‘B.txt’ using PigStorage(‘,’); 
+c = UNION a,b;
+SPLIT c INTO d IF $0==0, e IF $0==1; 
+dump d;
+dump e;
+f = FILTER c BY $1>3;
+dump f;
+A = LOAD ‘A.txt’ using PigStorage(‘,’) as (a1:int, a2:int, a3:int); 
+B = LOAD ‘B.txt’ using PigStorage(‘,’) as (b1:int, b2:int, b3:int); C = UNION A,B;
+g = FOREACH c GENERATE a2, a2*a3
+dump g;
+```
+
+3. More examples:
+   - [Slides from coreservlets](http://courses.coreservlets.com/Course-Materials/pdf/hadoop/06-Pig-01-Intro.pdf) 
+   - [git script examples](https://gist.github.com/brikis98/1332818)
 
 
