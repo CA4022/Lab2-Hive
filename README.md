@@ -13,10 +13,8 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
 
    Some key steps:
    
-   * Note you will need Java >6 and Hadoop 0.20.x or greater
-   
+   * Note you will need Java >6 and Hadoop 0.20.x or greater  
    * Make sure your $HADOOP_HOME environment variable is correctly set
-   
    * Set $HIVE_HOME and add hive to PATH
    
    - `$ export HIVE_HOME=/usr/local/Cellar/hive-3.1.2`
@@ -38,4 +36,3 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
    You can find more query examples and SQL cheat-sheet at the links below
    
    * https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/
-   * https://support.treasuredata.com/hc/en-us/articles/360001457347-Hive-Query-Language#hive-example-query-catalog
