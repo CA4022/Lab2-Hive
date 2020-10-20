@@ -60,9 +60,9 @@ The official apache manual is availalbe [here](http://pig.apache.org/docs/r0.17.
 
 * Get and install pig from one of the [mirror sites](http://www.apache.org/dyn/closer.cgi/pig/), copying it into the same directory where you have your hadoop root
 
-   - `$ wget https://ftp.heanet.ie/mirrors/www.apache.org/dist/pig/pig-0.17.0/pig-0.17.0.tar.gz `
-   - `$ tar -xvzf pig-0.17.0.tar.gz`
-   - `$ cp -avi pig-0.17.0.tar.gz /usr/local/Cellar/pig-0.17.0`
+ - `$ wget https://ftp.heanet.ie/mirrors/www.apache.org/dist/pig/pig-0.17.0/pig-0.17.0.tar.gz `
+ - `$ tar -xvzf pig-0.17.0.tar.gz`
+ - `$ cp -avi pig-0.17.0.tar.gz /usr/local/Cellar/pig-0.17.0`
    
 * Note you will need Java >6 and Hadoop 2.x or greater  
 * Make sure your $HADOOP_HOME environment variable is correctly set
@@ -78,7 +78,7 @@ The official apache manual is availalbe [here](http://pig.apache.org/docs/r0.17.
 * Exit the grunt shell: `$grunt> quit`
 
 ## PIG Examples
-1. Let's start from Wordcount
+1. Let's try Wordcount
 
 
 2. A Toy Example:
