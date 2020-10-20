@@ -78,8 +78,15 @@ The official apache manual is availalbe [here](http://pig.apache.org/docs/r0.17.
 * Exit the grunt shell: `$grunt> quit`
 
 ## PIG Examples
-1. Let's try Wordcount
+1. Let's try Wordcount (locally first)
 
+```
+lines = LOAD 'local_file.txt' AS (line:chararray);
+words = FOREACH lines GENERATE FLATTEN(TOKENIZE(line)) as word;
+grouped = GROUP words BY word;
+wordcount = FOREACH grouped GENERATE group, COUNT(words);
+DUMP wordcount;
+```
 
 2. A Toy Example:
       - Create two CSV file as follows:
