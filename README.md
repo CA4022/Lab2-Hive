@@ -87,6 +87,7 @@ grouped = GROUP words BY word;
 wordcount = FOREACH grouped GENERATE group, COUNT(words);
 DUMP wordcount;
 ```
+* NOTE: if you run pig on mapreduce, you need to make sure the input file is on HDFS, using 'hdfs://localhost:8020/user/<username>/input/input_file.txt'
 
 2. A Toy Example:
       - Create two CSV file as follows:
