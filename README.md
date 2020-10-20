@@ -1,6 +1,6 @@
 # Lab2 - Hive and Pig
 
-This lab covers material from week 3. 
+This lab covers material from week 3 and will span across the next 2 weeks.
 We will install HIVE and PIG and start practicing with their basic functions separately. 
 Both of these applications can either run on top of a working HDFS / Mapreduce cluster, or they can run in local mode (useful for debugging).
 
@@ -38,15 +38,23 @@ You can find an overall guide [here](https://cwiki.apache.org/confluence/display
    
    * Run the shell (of the three modes to run HIVE, we will use command line)
       - `$ $HIVE_HOME/bin/hive`
-   <!-- see this tutorial for guava files errors: https://phoenixnap.com/kb/install-hive-on-ubuntu -->
-   <!-- see this for :Name node is in safe mode" error: -->
-   <!-- for safemode error: `$ hadoop dfsadmin –safemode [get/enter/leave]` -->
-2. Check examples to Create, Load, Query data with Hive (slide 17 onwards)
-   * <http://courses.coreservlets.com/Course-Materials/pdf/hadoop/07-Hive-01.pdf>
-   <!-- import CSV and generate database: http://djkooks.github.io/hadoop-hive-setup>
-   <!-- more example queries: https://www.java-success.com/10-setting-getting-started-hive-mac/ -->
+
+## Hive Examples
+* Check examples to Create, Load, Query data with Hive:
+   - [Simple example queries](https://www.java-success.com/10-setting-getting-started-hive-mac/)
+   - [Hive Examples (slide 17 onwards)](http://courses.coreservlets.com/Course-Materials/pdf/hadoop/07-Hive-01.pdf)
+   - [Import CSV file and generate database](http://djkooks.github.io/hadoop-hive-setup)
    
-3. Create your own tables and load data from a .txt file you have created or downloaded, then practice some queries.
-   You can find more query examples and SQL cheat-sheet at the links below
+* Create your own tables and load data from a .txt file you have created or downloaded, then practice some queries.
+   You can find more query examples and SQL cheat-sheet [here](https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/)
    
-   * https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/
+## Hive errors
+Below is a list of possible errors you might encounter when installing and running Hive, and how to fix them.
+
+*  [Guava incompatibility error](https://phoenixnap.com/kb/install-hive-on-ubuntu)
+*  "Name node is in safe mode" error:
+   - Check if namenode safemode is ON: `$ $HADOOP_HOME/bin/hadoop dfsadmin –safemode get`
+   - If this is the case, disable it: `$ $HADOOP_HOME/bin/hadoop dfsadmin –safemode leave`
+* URISyntaxException: Check the problematic string into hive-site.xml file and replace it with correct path
+
+
