@@ -54,6 +54,8 @@ Below is a list of possible errors you might encounter when installing and runni
    - If this is the case, disable it: `$ $HADOOP_HOME/bin/hadoop dfsadmin –safemode leave`
 * URISyntaxException: Check the problematic string into hive-site.xml file and replace it with correct path
 
+<!-- check this as well:https://kb.databricks.com/metastore/hive-metastore-troubleshooting.html-->
+
 # Lab2 - PIG
 ## Download and Install PIG
 The official apache manual is availalbe [here](http://pig.apache.org/docs/r0.17.0/start.html). Key steps are summarised below.
