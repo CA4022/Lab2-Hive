@@ -6,13 +6,13 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
 
 There are 7 steps to complete in order run Hive:
 
-    * HDFS (Hadoop) setup should be present
-    * Setup environment variables in the appropriate file depending on your system
-    * Hive need external database to store Hive Metadata called Metastore. Setup either mysql or Derby database for Hive Metastore; we assume here you are using Derby as it comes with Hive and is easier to use. 
-    * _If you use mysql, you need to Download MySql connector jar and place it in Hive library._
-    * Setup configuration files for local Hive (.xml files)
-    * Setup HDFS for storing Hive data (creating the required directories)
-    * Starting Hive (commandline shell)
+* HDFS (Hadoop) setup should be present
+* Setup environment variables in the appropriate file depending on your system
+* Hive need external database to store Hive Metadata called Metastore. Setup either mysql or Derby database for Hive Metastore; we assume here you are using Derby as it comes with Hive and is easier to use. 
+* * If you use mysql, you need to Download MySql connector jar and place it in Hive library.
+* Setup configuration files for local Hive (.xml files)
+* Setup HDFS for storing Hive data (creating the required directories)
+* Starting Hive (commandline shell)
 
 ## Download and Install Hive
 You can find an overall guide [here](https://cwiki.apache.org/confluence/display/Hive/GettingStarted#GettingStarted-RunningHive). Key steps are summarised below.
