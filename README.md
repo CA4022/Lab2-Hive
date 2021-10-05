@@ -50,7 +50,7 @@ Installation guide for Mac OS X are available below:
   - Note: you might need to check your hive-site.xml if you get errors on the type of database and make sure it is set to be derby
    
  
-* Bootstrap locations used to store files on HDFS (you need to be in your hive home directory)
+* Bootstrap locations used to store files on HDFS (you need to make sure hadoop is running!)
    - `$ bin/hdfs dfs -mkdir /tmp` should already exist from hadoop installation
    - `$ bin/hdfs dfs -mkdir /user/hive/warehouse`
    - `$ bin/hdfs dfs -chmod g+w /tmp`should already have the right access rights from hadoop installation
