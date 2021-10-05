@@ -3,8 +3,20 @@ We will install HIVE and PIG and start practicing with their basic functions sep
 Both of these applications can either run on top of a working HDFS / Mapreduce cluster, or they can run in local mode (useful for debugging).
 
 # Lab2 - HIVE
+
+There are 7 steps to complete in order run Hive:
+
+    * HDFS (Hadoop) setup should be present
+    * Setup environment variables in the appropriate file depending on your system
+    * Hive need external database to store Hive Metadata called Metastore. Setup either mysql or Derby database for Hive Metastore; we assume here you are using Derby as it comes with Hive and is easier to use. 
+    * _If you use mysql, you need to Download MySql connector jar and place it in Hive library._
+    * Setup configuration files for local Hive (.xml files)
+    * Setup HDFS for storing Hive data (creating the required directories)
+    * Starting Hive (commandline shell)
+
 ## Download and Install Hive
 You can find an overall guide [here](https://cwiki.apache.org/confluence/display/Hive/GettingStarted#GettingStarted-RunningHive). Key steps are summarised below.
+Please note you need 
 
 If you are working on WSL please also look into [this guide](https://kontext.tech/column/hadoop/309/apache-hive-311-installation-on-windows-10-using-windows-subsystem-for-linux)
 
@@ -39,6 +51,7 @@ Installation guide for Mac OS X are available below:
 * Initialise derby database (mysql also an option but derby is easier to use)
   - `$ $HIVE_HOME/bin/schematool –initSchema –dbType derby`
   - Note: you might need to check your hive-site.xml if you get errors on the type of database and make sure it is set to be derby
+  
    
 * Run the shell (of the three modes to run HIVE, we will use command line)
   - `$ $HIVE_HOME/bin/hive`
