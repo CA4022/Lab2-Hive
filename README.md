@@ -4,7 +4,7 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
 
 # Lab2 - HIVE
 
-There are 7 steps to complete in order run Hive:
+There are 6 key steps to complete in order run Hive:
 
 * HDFS (Hadoop) setup should be present
 * Setup environment variables in the appropriate file depending on your system
