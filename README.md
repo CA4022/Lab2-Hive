@@ -39,8 +39,10 @@ Installation guide for Mac OS X are available below:
    - `$ export HIVE_HOME=<your hive home>`
    - `$ export PATH=$HIVE_HOME:$PATH`
  
-* Configuration file (optional)
-   - `$ cp $HIVE_HOME/conf/hive-default.xml.template $HIVE_HOME/conf/hive-site.xml`
+* Configuration file
+   - `$ cp $HIVE_HOME/conf/hive-env.sh.template $HIVE_HOME/conf/hive-config.sh`
+   - `$ nano $HIVE_HOME/conf/hive-config.sh`
+   - add the following line of code into `hive-config.sh` file: `$ export HADOOP_HOME=[$HADOOP_HOME path]`
    
 * Initialise derby database (mysql also an option but derby is easier to use)
   <!-- `$ $HIVE_HOME/bin/schematool –initSchema –dbType derby`-->
