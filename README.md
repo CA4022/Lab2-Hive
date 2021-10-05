@@ -51,10 +51,17 @@ Installation guide for Mac OS X are available below:
    
  
 * Bootstrap locations used to store files on HDFS (you need to make sure hadoop is running!)
-   - `$ bin/hdfs dfs -mkdir /tmp` should already exist from hadoop installation
-   - `$ bin/hdfs dfs -mkdir /user/hive/warehouse`
-   - `$ bin/hdfs dfs -chmod g+w /tmp`should already have the right access rights from hadoop installation
-   - `$ bin/hdfs dfs -chmod g+w /user/hive/warehouse`
+
+   - Create warehouse folder under hive and provide permission:
+      `$ bin/hdfs dfs -mkdir -p /user/hive/warehouse`
+      `$ bin/hdfs dfs -chmod g+w /user/hive/warehouse`
+
+
+   - Create tmp folder in root and provide permission
+      `$ bin/hdfs dfs -mkdir -p /tmp` should already exist from hadoop installation
+      `$ bin/hdfs dfs -chmod g+w /tmp` hould already have the right access rights from hadoop installation
+      `$ bin/hdfs dfs -mkdir -p /tmp/hive`
+      `$ bin/hdfs dfs -chmod 777 /tmp/hive`
    
 
    
