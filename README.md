@@ -30,7 +30,7 @@ Installation guide for Mac OS X are available below:
 
    - `$ wget https://ftp.heanet.ie/mirrors/www.apache.org/dist/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz `
    - `$ tar -xvzf apache-hive-3.1.2-bin.tar.gz `
-   - `$ cp -avi apache-hive-3.1.2-bin /usr/local/Cellar/hive-3.1.2`
+   - `$ cp -avi apache-hive-3.1.2-bin $HADOOP_HOME/../hive-3.1.2`
    
 * Note you will need Java >6 and Hadoop 0.20.x or greater  
 * Make sure your $HADOOP_HOME environment variable is correctly set
@@ -102,13 +102,13 @@ The official apache manual is availalbe [here](http://pig.apache.org/docs/r0.17.
 
    - `$ wget https://ftp.heanet.ie/mirrors/www.apache.org/dist/pig/pig-0.17.0/pig-0.17.0.tar.gz `
    - `$ tar -xvzf pig-0.17.0.tar.gz`
-   - `$ cp -avi pig-0.17.0.tar.gz /usr/local/Cellar/pig-0.17.0`
+   - `$ cp -avi pig-0.17.0.tar.gz $HADOOP_HOME/../pig-0.17.0`
    
 * Note you will need Java >6 and Hadoop 2.x or greater  
 * Make sure your $HADOOP_HOME environment variable is correctly set
 * Set $PIG_HOME and add pig to PATH
    
-   - `$ export PIG_HOME=/usr/local/Cellar/pig-0.17.0`
+   - `$ export PIG_HOME=<your pig home>`
    - `$ export PATH=$PATH:$PIG_HOME/bin`
 
 * Test your installation: `$ pig -help`
