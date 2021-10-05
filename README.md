@@ -9,8 +9,10 @@ You can find an overall guide [here](https://cwiki.apache.org/confluence/display
 If you are working on WSL please also look into [this guide](https://kontext.tech/column/hadoop/309/apache-hive-311-installation-on-windows-10-using-windows-subsystem-for-linux)
 
 Installation guide for Mac OS X are available below:
-- [Hive on Mac OSX El Capitan](https://bigdatalatte.wordpress.com/2017/02/01/install-hadoop-yarn-hive-on-a-macbook-pro-el-capitan/) 
-- [Hive on Mac OSX Catalina](https://medium.com/@hannahstrakna/installing-hadoop-with-hive-on-macos-catalina-using-homebrew-b4d384d455e4)
+
+[Hive on Mac OSX El Capitan](https://bigdatalatte.wordpress.com/2017/02/01/install-hadoop-yarn-hive-on-a-macbook-pro-el-capitan/) 
+
+[Hive on Mac OSX Catalina](https://medium.com/@hannahstrakna/installing-hadoop-with-hive-on-macos-catalina-using-homebrew-b4d384d455e4)
 
 * Get and install hive from one of the [mirror sites](http://www.apache.org/dyn/closer.cgi/hive/), copying it into the same directory where you have your hadoop root
 
