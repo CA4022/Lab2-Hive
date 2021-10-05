@@ -9,7 +9,7 @@ There are 7 steps to complete in order run Hive:
 * HDFS (Hadoop) setup should be present
 * Setup environment variables in the appropriate file depending on your system
 * Hive need external database to store Hive Metadata called Metastore. Setup either mysql or Derby database for Hive Metastore; we assume here you are using Derby as it comes with Hive and is easier to use. 
-* * If you use mysql, you need to Download MySql connector jar and place it in Hive library.
+   - If you use mysql, you need to Download MySql connector jar and place it in Hive library.
 * Setup configuration files for local Hive (.xml files)
 * Setup HDFS for storing Hive data (creating the required directories)
 * Starting Hive (commandline shell)
