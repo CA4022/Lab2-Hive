@@ -49,7 +49,8 @@ Installation guide for Mac OS X are available below:
    - `$ cp $HIVE_HOME/conf/hive-default.xml.template $HIVE_HOME/conf/hive-site.xml`
    
 * Initialise derby database (mysql also an option but derby is easier to use)
-  - `$ $HIVE_HOME/bin/schematool –initSchema –dbType derby`
+  <! - `$ $HIVE_HOME/bin/schematool –initSchema –dbType derby`-->
+  - `$ $HIVE_HOME/bin/schematool -dbType derby -initSchema`
   - Note: you might need to check your hive-site.xml if you get errors on the type of database and make sure it is set to be derby
   
    
