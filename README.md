@@ -36,15 +36,9 @@ Installation guide for Mac OS X are available below:
 * Make sure your $HADOOP_HOME environment variable is correctly set
 * Set $HIVE_HOME and add hive to PATH
    
-   - `$ export HIVE_HOME=/usr/local/Cellar/hive-3.1.2`
-   - `$ export PATH=/usr/local/Cellar/hive-3.1.2/bin:$PATH`
-   
-* Bootstrap locations used to store files on HDFS (you need to be in your hive home directory)
-   - `$ bin/hdfs dfs -mkdir /tmp` should already exist from hadoop installation
-   - `$ bin/hdfs dfs -mkdir /user/hive/warehouse`
-   - `$ bin/hdfs dfs -chmod g+w /tmp`should already have the right access rights from hadoop installation
-   - `$ bin/hdfs dfs -chmod g+w /user/hive/warehouse`
-   
+   - `$ export HIVE_HOME=<your hive home>`
+   - `$ export PATH=$HIVE_HOME:$PATH`
+ 
 * Configuration file (optional)
    - `$ cp $HIVE_HOME/conf/hive-default.xml.template $HIVE_HOME/conf/hive-site.xml`
    
@@ -52,7 +46,15 @@ Installation guide for Mac OS X are available below:
   <!-- `$ $HIVE_HOME/bin/schematool –initSchema –dbType derby`-->
   - `$ $HIVE_HOME/bin/schematool -dbType derby -initSchema`
   - Note: you might need to check your hive-site.xml if you get errors on the type of database and make sure it is set to be derby
-  
+   
+ 
+* Bootstrap locations used to store files on HDFS (you need to be in your hive home directory)
+   - `$ bin/hdfs dfs -mkdir /tmp` should already exist from hadoop installation
+   - `$ bin/hdfs dfs -mkdir /user/hive/warehouse`
+   - `$ bin/hdfs dfs -chmod g+w /tmp`should already have the right access rights from hadoop installation
+   - `$ bin/hdfs dfs -chmod g+w /user/hive/warehouse`
+   
+
    
 * Run the shell (of the three modes to run HIVE, we will use command line)
   - `$ $HIVE_HOME/bin/hive`
