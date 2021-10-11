@@ -85,8 +85,8 @@ Installation guide for Mac OS X are available below:
 ## Hive Examples
 * Check examples to Create, Load, Query data with Hive:
   - [Simple example queries](https://www.java-success.com/10-setting-getting-started-hive-mac/)
-  - [Hive Examples (slide 17 onwards)](http://courses.coreservlets.com/Course-Materials/pdf/hadoop/07-Hive-01.pdf)
   - [Import CSV file and generate database](http://djkooks.github.io/hadoop-hive-setup)
+  - check examples on Loop.
    
 * Create your own tables and load data from a .txt file you have created or downloaded, then practice some queries.
 * You can find more query examples and SQL cheat-sheet [here](https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/)
