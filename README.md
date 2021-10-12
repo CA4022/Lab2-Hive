@@ -140,9 +140,9 @@ DUMP wordcount;
 2. A Toy Example:
       - Create two CSV file as follows:
             
-            A.txt containing two lines: (0,1,2) and (1,3,4)
+            A.txt containing two lines: 0,1,2 and 1,3,4
             
-            B.txt containing two lines: (0,5,2) and (1,7,8)
+            B.txt containing two lines: 0,5,2 and 1,7,8
    
       - Run the PIG Latin commands below, one by one from shell, and observe what is contained in d, e, f and g after each dump (note the content of g and reflect upon the way pig handles schema on the fly
 ```
