@@ -162,7 +162,7 @@ dump G;
 ```
 
 3. More examples:
-   - [Slides from coreservlets](http://courses.coreservlets.com/Course-Materials/pdf/hadoop/06-Pig-01-Intro.pdf) 
+   - [PigLatin basics](http://pig.apache.org/docs/r0.17.0/basic.html#load) 
    - [git script examples](https://gist.github.com/brikis98/1332818)
 
 
