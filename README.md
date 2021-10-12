@@ -155,9 +155,10 @@ dump e;
 f = FILTER c BY $1>3;
 dump f;
 A = LOAD ‘A.txt’ using PigStorage(‘,’) as (a1:int, a2:int, a3:int); 
-B = LOAD ‘B.txt’ using PigStorage(‘,’) as (b1:int, b2:int, b3:int); C = UNION A,B;
-g = FOREACH c GENERATE a2, a2*a3
-dump g;
+B = LOAD ‘B.txt’ using PigStorage(‘,’) as (b1:int, b2:int, b3:int); 
+C = UNION A,B;
+G = FOREACH C GENERATE a2, a2*a3;
+dump G;
 ```
 
 3. More examples:
