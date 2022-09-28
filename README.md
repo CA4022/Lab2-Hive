@@ -84,10 +84,10 @@ Installation guide for Mac OS X are available below:
 
 ## Hive Examples
 * Check examples to Create, Load, Query data with Hive:
-  - [Simple example queries (from step 15.](https://www.java-success.com/10-setting-getting-started-hive-mac/)
-  - [Import CSV (titanic.csv) file and generate database](http://djkooks.github.io/hadoop-hive-setup)
+  - [Simple example queries (from step 15.)](https://www.java-success.com/10-setting-getting-started-hive-mac/)
    
 * Create your own tables and load data from a .txt file you have created or downloaded, then practice some queries.
+  - [Example: load csv file in HIVE table](https://bigdataprogrammers.com/load-csv-file-in-hive/) 
 * You can find more query examples and SQL cheat-sheet [here](https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/)
 * Check manual on Loop for HIVEQL basics with examples
    
@@ -99,8 +99,7 @@ Below is a list of possible errors you might encounter when installing and runni
    - Check if namenode safemode is ON: `$ $HADOOP_HOME/bin/hadoop dfsadmin –safemode get`
    - If this is the case, disable it: `$ $HADOOP_HOME/bin/hadoop dfsadmin –safemode leave`
 * URISyntaxException: Check the problematic string into hive-site.xml file and replace it with correct path
-
-<!-- check this as well:https://kb.databricks.com/metastore/hive-metastore-troubleshooting.html-->
+* Other troubleshooting tips [here](https://kb.databricks.com/metastore/hive-metastore-troubleshooting.html)
 
 # Lab2 - PIG
 ## Download and Install PIG
