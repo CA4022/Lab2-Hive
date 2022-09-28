@@ -20,7 +20,7 @@ Please note you need
 
 If you are working on WSL please also look into [this guide](https://kontext.tech/column/hadoop/309/apache-hive-311-installation-on-windows-10-using-windows-subsystem-for-linux)
 
-Installation guide for Mac OS X are available below:
+Installation guide for Mac OS X are available below (skip to the HIVE section):
 
 [Hive on Mac OSX El Capitan](https://bigdatalatte.wordpress.com/2017/02/01/install-hadoop-yarn-hive-on-a-macbook-pro-el-capitan/) 
 
