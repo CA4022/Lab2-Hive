@@ -16,7 +16,7 @@ There are 6 key steps to complete in order run Hive:
 
 ## Download and Install Hive
 You can find an overall guide [here](https://cwiki.apache.org/confluence/display/Hive/GettingStarted#GettingStarted-RunningHive). Key steps are summarised below.
-Please note you need 
+Please note you need a working Hadoop installation (See [Lab1](https://github.com/CA4022/Lab1-Configuration-HadoopMR))
 
 If you are working on WSL please also look into [this guide](https://kontext.tech/column/hadoop/309/apache-hive-311-installation-on-windows-10-using-windows-subsystem-for-linux)
 
