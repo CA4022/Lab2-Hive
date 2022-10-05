@@ -82,6 +82,13 @@ Installation guide for Mac OS X are available below (skip to the HIVE section):
 * Run the shell (of the three modes to run HIVE, we will use command line)
   - `$ $HIVE_HOME/bin/hive`
 
+* Exit hive shell
+  - `$ >exit;`
+
+* Where are tables stored? (you need to clean this up if you want to recreate the same table)
+  - `$ hdfs dfs -ls /user/hive/warehouse/table-name`
+
+
 ## Hive Examples
 * Check examples to Create, Load, Query data with Hive:
   - [Simple example queries (from step 15.)](https://www.java-success.com/10-setting-getting-started-hive-mac/)
