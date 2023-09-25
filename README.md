@@ -12,6 +12,7 @@ There are 6 key steps to complete in order run Hive:
    - If you use mysql, you need to Download MySql connector jar and place it in Hive library.
 * Setup configuration files for local Hive (.xml files)
 * Setup HDFS for storing Hive data (creating the required directories)
+* Configure metastore: most guides refer to Mysql but we are going to use Derby metastore
 * Starting Hive (commandline shell)
 
 ## Download and Install Hive
