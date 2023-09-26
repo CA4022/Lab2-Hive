@@ -20,7 +20,7 @@ Please note you need a working Hadoop installation (See [Lab1](https://github.co
 
 If you are working on WSL please also look into [this guide](https://kontext.tech/column/hadoop/309/apache-hive-311-installation-on-windows-10-using-windows-subsystem-for-linux)
 
-Installation guide for Mac OS X are available below (skip to the HIVE section):
+Installation guide for Mac OS X are available below (skip to the HIVE section and use DERBY instead of MySQL):
 
 [Hive on Mac OSX El Capitan](https://bigdatalatte.wordpress.com/2017/02/01/install-hadoop-yarn-hive-on-a-macbook-pro-el-capitan/) 
 
@@ -43,6 +43,7 @@ Installation guide for Mac OS X are available below (skip to the HIVE section):
    - `$ cp $HIVE_HOME/conf/hive-env.sh.template $HIVE_HOME/conf/hive-config.sh`
    - `$ nano $HIVE_HOME/conf/hive-config.sh`
    - add the following line of code into `hive-config.sh` file: `$ export HADOOP_HOME=[your $HADOOP_HOME path]`
+   - `$ nano $HADOOP_HOME/conf/hive-site.xml` creates your configuration file for Hive to run in pseudo-distributed mode (not needed when you run hive locally)
    - Note: check your hive-site.xml and make sure the type of database is set to derby:
    
 ```xml 
@@ -87,6 +88,15 @@ Installation guide for Mac OS X are available below (skip to the HIVE section):
 
 * Where are tables stored? (you need to clean this up if you want to recreate the same table)
   - `$ hdfs dfs -ls /user/hive/warehouse/table-name`
+
+
+## Hive in local mode
+* Modify the necessary variables for hive local execution (in hive-site.xml or from Hive shell):
+  - [Getting Started with Running Hive](https://cwiki.apache.org/confluence/display/Hive/GettingStarted#GettingStarted-RunningHiveCLI)
+* Pay particlar attention to the following variables:
+  - `mapreduce.framework.name` should be =local for full local execution
+  - `mapred.local.dir` should point to a valid path on the local machine 
+  - `hive.exec.mode.local.auto` should be =false to run hive in local mode (if unset, it runs locally only with certain limits to the input size and number of map/reduce jobs)
 
 
 ## Hive Examples
