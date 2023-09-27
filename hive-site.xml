@@ -1,0 +1,56 @@
+<configuration>
+  <!-- WARNING!!! This file is auto generated for documentation purposes ONLY! -->
+  <!-- WARNING!!! Any changes you make to this file will be ignored by Hive.   -->
+  <!-- WARNING!!! You must make your changes in hive-site.xml instead.         -->
+  <!-- Hive Execution Parameters -->
+
+ <property>
+    <name>hive.metastore.db.type</name>
+    <value>DERBY</value>
+    <description>
+      Expects one of [derby, oracle, mysql, mssql, postgres].
+      Type of database used by the metastore. Information schema &amp; JDBCStorageHandler depend on it.
+    </description>
+  </property>
+
+<property>
+    <name>hive.metastore.warehouse.dir</name>
+    <value>/user/hive/warehouse</value>
+</property>
+
+<property>
+   <name>javax.jdo.option.ConnectionURL</name>
+   <value>jdbc:derby:metastore_db;create=true </value>
+   <description>JDBC connect string for a JDBC metastore </description>
+</property>
+
+<property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+    <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+</property>
+
+</configuration>
+
+Alessandras-MacBook-Pro:libexec alessandra$ nano /usr/local/Cellar/hive/3.1.3/libexec/conf/hive-site.xml 
+
+  GNU nano 2.0.6                          File: /usr/local/Cellar/hive/3.1.3/libexec/conf/hive-site.xml                                                          
+
+  </property>
+
+<property>
+    <name>hive.metastore.warehouse.dir</name>
+    <value>/user/hive/warehouse</value>
+</property>
+
+<property>
+   <name>javax.jdo.option.ConnectionURL</name>
+   <value>jdbc:derby:metastore_db;create=true </value>
+   <description>JDBC connect string for a JDBC metastore </description>
+</property>
+
+<property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+    <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+</property>
+
+</configuration>
