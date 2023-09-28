@@ -83,6 +83,8 @@ Installation guide for Mac OS X are available below (skip to the HIVE section an
 * Run the shell (of the three modes to run HIVE, we will use command line)
   - `$ $HIVE_HOME/bin/hive`
 
+* Execute Hive queries (see example file in this repo and links in Hive Eamples and Tutorials below)
+  
 * Exit hive shell
   - `$ >exit;`
 
@@ -99,15 +101,21 @@ Installation guide for Mac OS X are available below (skip to the HIVE section an
   - `hive.exec.mode.local.auto` should be =false to run hive in local mode (if unset, it runs locally only with certain limits to the input size and number of map/reduce jobs)
 
 
-## Hive Examples
+## Hive Examples and Tutorials
 * Check examples to Create, Load, Query data with Hive:
   - [Simple example queries (from step 15.)](https://www.java-success.com/10-setting-getting-started-hive-mac/)
    
 * Create your own tables and load data from a .txt file you have created or downloaded, then practice some queries.
   - [Example: load csv file in HIVE table](https://bigdataprogrammers.com/load-csv-file-in-hive/) 
+
 * You can find more query examples and SQL cheat-sheet [here](https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/)
+
 * Check manual on Loop for HIVEQL basics with examples
-   
+
+* Additional tutorials:
+  - [Hive tutorial for beginners](https://www.guru99.com/hive-tutorials.html)
+  - [Hive tutorial and refresher](https://www.analyticsvidhya.com/blog/2020/12/15-basic-and-highly-used-hive-queries-that-all-data-engineers-must-know/)
+    
 ## Hive errors and fixes
 Below is a list of possible errors you might encounter when installing and running Hive, and how to fix them.
 
