@@ -113,7 +113,7 @@ This will will set the default warehouse dir to be /tmp/warehouse and the defaul
  
  - `$ hive> SET hive.exec.mode.local.auto.inputbytes.max=50000000;`
  
- - `$ hive> SET hive.exec.mode.local.auto.tasks.max=5;`
+ - `$ hive> SET hive.exec.mode.local.auto.input.files.max=5;`
  
 
 Note that by default mapred.local.dir=/tmp/hadoop-username/mapred and this is ok. You need to make sure mapred.local.dir points to a valid local path so the default path should be there or else you can specify a different one
