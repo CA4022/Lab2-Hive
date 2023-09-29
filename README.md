@@ -110,10 +110,15 @@ This will will set the default warehouse dir to be /tmp/warehouse and the defaul
 * Use the SET command for all the variables for a specific hive session (this can be done from within the hive shell and it is reset once you exit hive’s CLI):
 
  `$ hive> SET mapreduce.framework.name=local; ` %(added into the EXPORT)
+ 
  `$ hive> SET hive.exec.mode.local.auto=true; ` %(default is false)
+ 
  `$ hive> SET hive.exec.mode.local.auto.inputbytes.max=50000000;`
+ 
  `$ hive> SET hive.exec.mode.local.auto.tasks.max=5;`
+ 
  `$ hive> SET hive.metastore.warehouse.dir=/tmp/warehouse;`
+ 
  `$ hive> SET fs.defaultFS=/tmp; `(override the core-site.xml setup to run on hdfs localhost for this hive session only)
 
 Note that by default mapred.local.dir=/tmp/hadoop-username/mapred and this is ok. You need to make sure mapred.local.dir points to a valid local path so the default path should be there or else you can specify a different one
