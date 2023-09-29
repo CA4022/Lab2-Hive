@@ -99,17 +99,15 @@ You can run hive in local mode. First make sure you have the right permission an
  - `$ mkdir /tmp/hive/warehouse`
  - `$ sudo chmod g+w /tmp/hive/warehouse`
 
-Then you need to change some configuration variables. I suggest not to change hive-site.xml or core-site.xml properties, but instead modify the necessary variables for hive local execution either for a specific terminal session (with EXPORT) or for a specific hive session (with SET command):
+Then you need to change some configuration variables. I suggest not to change hive-site.xml or core-site.xml properties, but instead modify the some of the necessary variables for hive local execution before launching the hive shell for a specific terminal session (with EXPORT) and to set other variables for a specific hive session (with SET command) as below:
 
 * Use the EXPORT command to set HIVE_OPTS for a session (note that to unset this for a pseudo-distributed execution of HIVE you need to run the command `$ unset HIVE_OPTS`):
 
 `$ EXPORT  HIVE_OPTS='-hiveconf mapreduce.framework.name=local -hiveconf fs.defaultFS=file:///tmp -hiveconf hive.metastore.warehouse.dir=file:///tmp/warehouse -hiveconf hive.exec.mode.local.auto=true'`
 
-This will will set the default warehouse dir to be /tmp/warehouse and the default file system to be in the local folder /tmp. With the above  you have also created a path on local machine for mapreduce to work locally (note this is created in user home not in hadoop home as you write “/tmp…” and not “tmp…”. 
+This will will set the default warehouse dir to be /tmp/warehouse and the default file system to be in the local folder /tmp. With the above you have also created a path on local machine for mapreduce to work locally (note this is created in user home not in hadoop home as you write “/tmp…” and not “tmp…”) and you override the core-site.xml setup to run on local FS as opposed to HDFS.
 
-* Use the SET command for all the variables for a specific hive session (this can be done from within the hive shell and it is reset once you exit hive’s CLI):
-  
- - `$ hive> SET mapreduce.framework.name=local; ` %(added into the EXPORT)
+* Use the SET command for other variables to be set for a specific hive session (this can be done from within the hive shell and it is reset once you exit hive’s CLI):
 
  - `$ hive> SET hive.exec.mode.local.auto=true; ` %(default is false)
  
@@ -117,9 +115,6 @@ This will will set the default warehouse dir to be /tmp/warehouse and the defaul
  
  - `$ hive> SET hive.exec.mode.local.auto.tasks.max=5;`
  
- - `$ hive> SET hive.metastore.warehouse.dir=/tmp/warehouse;`
- 
- - `$ hive> SET fs.defaultFS=/tmp; `(override the core-site.xml setup to run on hdfs localhost for this hive session only)
 
 Note that by default mapred.local.dir=/tmp/hadoop-username/mapred and this is ok. You need to make sure mapred.local.dir points to a valid local path so the default path should be there or else you can specify a different one
 
