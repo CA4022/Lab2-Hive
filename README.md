@@ -109,7 +109,7 @@ This will will set the default warehouse dir to be /tmp/warehouse and the defaul
 
 * Use the SET command for other variables to be set for a specific hive session (this can be done from within the hive shell and it is reset once you exit hive’s CLI):
 
- - `$ hive> SET hive.exec.mode.local.auto=true; ` %(default is false)
+ <!-- can also set this by commandline: `$ hive> SET hive.exec.mode.local.auto=true; ` %(default is false) -->
  
  - `$ hive> SET hive.exec.mode.local.auto.inputbytes.max=50000000;`
  
