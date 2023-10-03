@@ -103,7 +103,7 @@ Then you need to change some configuration variables. I suggest not to change hi
 
 * Use the EXPORT command to set HIVE_OPTS for a session (note that to unset this for a pseudo-distributed execution of HIVE you need to run the command `$ unset HIVE_OPTS`):
 
-`$ EXPORT  HIVE_OPTS='-hiveconf mapreduce.framework.name=local -hiveconf fs.defaultFS=file:///tmp -hiveconf hive.metastore.warehouse.dir=file:///tmp/warehouse -hiveconf hive.exec.mode.local.auto=true'`
+`$ EXPORT  HIVE_OPTS='-hiveconf mapreduce.framework.name=local -hiveconf fs.defaultFS=file:///tmp -hiveconf hive.metastore.warehouse.dir=file:///tmp/hive/warehouse -hiveconf hive.exec.mode.local.auto=true'`
 
 This will will set the default warehouse dir to be /tmp/warehouse and the default file system to be in the local folder /tmp. With the above you have also created a path on local machine for mapreduce to work locally (note this is created in user home not in hadoop home as you write “/tmp…” and not “tmp…”) and you override the core-site.xml setup to run on local FS as opposed to HDFS.
 
