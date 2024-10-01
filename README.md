@@ -26,6 +26,8 @@ Installation guide for Mac OS X are available below (skip to the HIVE section an
 
 [Hive on Mac OSX Catalina](https://medium.com/@hannahstrakna/installing-hadoop-with-hive-on-macos-catalina-using-homebrew-b4d384d455e4)
 
+[Hive (skip to relevant section) on Mac M1/M2](https://towardsdev.com/how-to-install-and-setup-apache-hadoop-hive-nifi-on-macos-with-apple-silicon-m1-m2-995798e8ba23)
+
 * Get and install hive from one of the [mirror sites](http://www.apache.org/dyn/closer.cgi/hive/), copying it into the same directory where you have your hadoop root
 
    - `$ wget https://ftp.heanet.ie/mirrors/www.apache.org/dist/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz `
