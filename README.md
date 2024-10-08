@@ -123,7 +123,12 @@ Note that by default mapred.local.dir=/tmp/hadoop-username/mapred and this is ok
 Check more info on HIVE configuraion at [Getting Started with Running Hive](https://cwiki.apache.org/confluence/display/Hive/GettingStarted#GettingStarted-RunningHiveCLI)
 
 
-## Hive Examples and Tutorials
+## Hive Reference manual and Examples/Tutorials
+* Reference manuals:
+  - [Hive Data Definition Language](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL)
+  - [Hive Data Manipulation Language](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DML#LanguageManualDML-HiveDataManipulationLanguage)
+  - [Hive Select queries](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Select)
+  
 * Check examples to Create, Load, Query data with Hive:
   - [Simple example queries (from step 15.)](https://www.java-success.com/10-setting-getting-started-hive-mac/)
   - [More query examples](https://datapeaker.com/en/big--data/hive-queries-15-basic-hive-queries-for-data-engineers/)
