@@ -53,7 +53,7 @@ Installation guide for Mac OS X are available below (skip to the HIVE section an
 ```xml 
 <property>
    <name>javax.jdo.option.ConnectionURL</name>
-   <value>jdbc:derby:$HOME/hadoop/metastore_db;create=true </value>
+   <value>jdbc:derby:$HADOOP_HOME/metastore_db;create=true </value>
    <description>JDBC connect string for a JDBC metastore </description>
 </property>
 ```
