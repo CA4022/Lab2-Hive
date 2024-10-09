@@ -44,7 +44,9 @@ Installation guide for Mac OS X are available below (skip to the HIVE section an
 * Configuration file
    - `$ cp $HIVE_HOME/conf/hive-env.sh.template $HIVE_HOME/conf/hive-config.sh`
    - `$ nano $HIVE_HOME/conf/hive-config.sh`
-   - add the following line of code into `hive-config.sh` file: `$ export HADOOP_HOME=[your $HADOOP_HOME path]`
+   - add the following line of code into `hive-config.sh` file:
+   - `$ export HADOOP_HOME=[your $HADOOP_HOME path]`
+   
    - `$ nano $HIVE_HOME/conf/hive-site.xml` creates your configuration file for Hive to run in pseudo-distributed mode (not needed when you run hive locally)
    - Note: check your hive-site.xml and make sure the type of database is set to derby:
    
