@@ -132,6 +132,10 @@ Check more info on HIVE configuraion at [Getting Started with Running Hive](http
 * Check examples to Create, Load, Query data with Hive:
   - [Simple example queries (from step 15.)](https://www.java-success.com/10-setting-getting-started-hive-mac/)
   - [More query examples](https://datapeaker.com/en/big--data/hive-queries-15-basic-hive-queries-for-data-engineers/)
+  - [Hive Join examples](https://www.sparkcodehub.com/hive/mastering-hive-joins)
+  - [Hive Sampling examples] ()
+  - [Hive Subqueries examples] ()
+  
    
 * Create your own tables and load data from a .txt file you have created or downloaded, then practice some queries.
   - [Example: load csv file in HIVE table](https://sparkbyexamples.com/apache-hive/hive-load-csv-file-into-table/)
